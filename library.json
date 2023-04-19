@@ -1,0 +1,21 @@
+{
+  "name": "BBR_Seeker",
+  "description": "Building Block Robotics IR Seeker Sensor library.",
+  "keywords": "sensor, seeker, ir, arduino, bbr",
+  "authors": [
+    {
+      "name": "Jorgy-Hub",
+      "email": "jorgeadolfog79@gmail.com",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platform": "*",
+  "headers": "BBR_Seeker.h"
+}
