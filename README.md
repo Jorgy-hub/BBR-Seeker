@@ -4,8 +4,8 @@
 IR Seeker is a multi-platform 360 degree IR Seeker, suitable for Robocup Junior Soccer (Standard, Lightweight). For more advanced teams, the sensor can be programmed using the Arduino platform using the Grove I2C output.
 
 ## Installation
-To use this library, first download the library file, paste it into the ``\Arduino\libraries`` directory, then open the examples folder and run the demo in the folder.
-Another method to install is directly from the Arduino IDE then go to Sketch then Include Library then Add .ZIP Library and search for the compressed library.
+* To use this library, first download the library file, paste it into the ``\Arduino\libraries`` directory, then open the examples folder and run the demo in the folder.
+* Another method to install is directly from the Arduino IDE then go to Sketch then Include Library then Add .ZIP Library and search for the compressed library.
 
 ## Example
 ```cpp
