@@ -48,6 +48,7 @@ SeekerResult Seeker::Read() {
     Data.Direction_1 = popular;
     Data.Direction_2 = average;
     Data.Strength = strength;
+    return Data;
 }
 
 int Seeker::PopulateValues(int nums[], int size) {
