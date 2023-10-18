@@ -45,9 +45,21 @@ SeekerResult Seeker::Read() {
     int popular = Seeker::PopulateValues(buffer, size);
     int average = Seeker::AverageValues(buffer, size);
 
+    Data.Direction = 0;
     Data.Direction_1 = popular;
     Data.Direction_2 = average;
     Data.Strength = strength;
+    return Data;
+}
+
+SeekerResult Seeker::ReadAdvanced(int nums[], int size) {
+    SeekerResult Data = Seeker::Read();
+    bool isInValue = false; 
+    for(int i = 0; i < size; i++) {
+      if(nums[i] == Data.Direction_2)
+        isInValue = true;
+    }
+    Data.Direction = isInValue ? Data.Direction_2 : Data.Direction_1;
     return Data;
 }
 
@@ -80,6 +92,6 @@ int Seeker::AverageValues(int nums[], int size) {
         sum += nums[i];
 
     average = (double)(sum/size);
-    result = ((int)round(average)) - 1;
-    return (result == 0) ? 12 : result;
+    result = ((int)round(average));
+    return (result <= 0) ? 12 : result;
 }
