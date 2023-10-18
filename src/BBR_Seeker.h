@@ -9,7 +9,8 @@
 # include "Arduino.h"
 # include "Wire.h"
 
-struct SeekerResult {
+struct SeekerResult { 
+    int Direction;
     int Direction_1;
     int Direction_2;
     int Strength;
@@ -60,6 +61,13 @@ class Seeker {
          * @return SeekerResult
         */
         static SeekerResult Read();
+
+        /**
+         * @brief Function to get the readed Values specificly selected.
+         * @param pins Pins that will be selected as Direction alternative.
+         * @return SeekerResult
+        */
+        static SeekerResult ReadAdvanced(int nums[], int size); 
 };
 
 # endif
